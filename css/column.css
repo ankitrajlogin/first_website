@@ -1,0 +1,42 @@
+.column{
+    
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+    border-color: green;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  
+  #change{
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+
+  }
+
+  #change:hover{
+    background-color: rgb(237, 152, 152);
+    transform: sclae(1.3) ;
+  }
+
+
+
+
+  
+
+  
